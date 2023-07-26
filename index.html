@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./images/Bookmark-PNG-Background-Image.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mt-5">
+                    <h1 class="pb-3 position-relative fw-bold">Bookmarker</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="form-project text-center my-5 py4 bookmark">
+                <h2 class="text-center">
+                    <span class="iconbg"><i class="fa-solid fa-bookmark"></i></span>
+                    <span class="bg fw-bold">Bookmark</span>  <span class="bg1 fw-bold">your</span> <span class="bg2 fw-bold">favorite</span> <span class="bg3 fw-bold">sites</span>
+                    <span class="iconbg1"><i class="fa-solid fa-bookmark"></i></span>
+                </h2>
+                <div class="from-group mx-5 d-flex flex-column justify-content-center pb-4">
+                    <label for="bookmarkName" class="pb-3 fw-bolder text-start ">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name
+                    </label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control " id="name">
+                </div>
+                <div class="from-group mx-5 d-flex flex-column justify-content-center pb-4">
+                    <label for="bookmarkURL" class="pb-2 fw-bolder text-start">
+                        <i class="fa-solid fa-link pe-2"></i>Site URL
+                    </label>
+                    <input  type="url" placeholder="Website URL" class="form-control" id="url">
+                </div>
+                <button class="btn btn-submit px-5 text-white" id="addBtn">Submit</button>
+            </div>
+            <hr>
+            
+            <table class="table mt-4 text-center bg-white ">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
